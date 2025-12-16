@@ -14,19 +14,19 @@
     <!-- in this part we will look at how the the grid works in boot strap -->
 
     <div class="container">
-        <div class="row">
-            <!-- NB: row always takes margin right and left -15 -->
-            <div class="col-4 bg-danger" style="text-align: center;">Column 1</div>
-            <div class="col-4 bg-dark" style="text-align: center;">Column 2</div>
-            <div class="col-4 bg-danger" style="text-align: center;">Column 3</div>
-            <div class="col-4 bg-dark" style="text-align: center;">Column 4</div>
-            <div class="col-4 bg-danger" style="text-align: center;">Column 5</div>
-            <div class="col-4 bg-dark" style="text-align: center;">Column 6</div>
-        </div>
+      <div class="row">
+        <!-- NB: row always takes margin right and left -15 -->
+        <div class="col-4 bg-danger" style="text-align: center">Column 1</div>
+        <div class="col-4 bg-dark" style="text-align: center">Column 2</div>
+        <div class="col-4 bg-danger" style="text-align: center">Column 3</div>
+        <div class="col-4 bg-dark" style="text-align: center">Column 4</div>
+        <div class="col-4 bg-danger" style="text-align: center">Column 5</div>
+        <div class="col-4 bg-dark" style="text-align: center">Column 6</div>
+      </div>
     </div>
-    <br>
-    <hr style="height: 1.5px; border: solid 1px black;">
-    <br>
+    <br />
+    <hr style="height: 1.5px; background: black; border: solid 1px black" />
+    <br />
     <!-- grid for all screens:
      col : is the smallest size
      mobile: sm 
@@ -34,49 +34,105 @@
      computer: lg
      big screens: xl -->
 
-    <div class="container" >
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-danger" style="text-align: center;">column</div>
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-dark"  style="text-align: center;">column</div>
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-danger"  style="text-align: center;">column</div>
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-dark"  style="text-align: center;">column</div>
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-danger"  style="text-align: center;">column</div>
-            <div class="col-sm-6 col-md-4 col-lg-3 bg-dark"  style="text-align: center;">column</div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-danger"
+          style="text-align: center"
+        >
+          column
         </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-dark"
+          style="text-align: center"
+        >
+          column
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-danger"
+          style="text-align: center"
+        >
+          column
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-dark"
+          style="text-align: center"
+        >
+          column
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-danger"
+          style="text-align: center"
+        >
+          column
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 bg-dark"
+          style="text-align: center"
+        >
+          column
+        </div>
+      </div>
     </div>
 
     <!-- hot to align items and justify them using btsrp -->
-     <!-- we have to use align-items and align self to move vertically:
+    <!-- we have to use align-items and align self to move vertically:
       alig-items used in row class
       while align-self is usen to move one colum 
       ===============
 
       justify-content used to move row hirzontally while we have betwen 1 to 3 columns
       -->
-      <div class="container" style="height:200px; border:1px solid black; margin-top:20px;">
-        <div class="row align-items-center  justify-content-between" style="height:100%; background: #456f99;" >
-            <div class="col-3 bg-danger align-self-start" style="text-align: center;">column</div>
-            <div class="col-3 bg-dark" style="text-align: center;">column</div>
-            <div class="col-3 align-self-end bg-danger" style="text-align: center;">column</div>
+    <div
+      class="container"
+      style="height: 200px; border: 1px solid black; margin-top: 20px"
+    >
+      <div
+        class="row align-items-center justify-content-between"
+        style="height: 100%; background: #456f99"
+      >
+        <div
+          class="col-3 bg-danger align-self-start"
+          style="text-align: center"
+        >
+          column
+        </div>
+        <div class="col-3 bg-dark" style="text-align: center">column</div>
+        <div class="col-3 align-self-end bg-danger" style="text-align: center">
+          column
         </div>
       </div>
+    </div>
 
-      <!-- colors in btsrp:
+    <!-- colors in btsrp:
        warning ~= yellow; dark and secondary ~= gray ; light = white; primary ~= blue; success = green; info ~= blue; danger ~= red
        these are the colors I know right now -->
-       <!-- if I want to change text color I can use the proprety text-color(warning, info...)
+    <!-- if I want to change text color I can use the proprety text-color(warning, info...)
             if I want to change background color I can use bg-color(primary, secondary..) -->
 
     <!-- alert class -->
-     <div class="alert alert-danger">ALEEERT, This is dangerous!!!</div>
-     <div class="alert alert-warning">warning, Be cautious!!!</div>
-     <div class="alert alert-success">You successed</div>
+    <div class="alert alert-danger">ALEEERT, This is dangerous!!!</div>
+    <div class="alert alert-warning">warning, Be cautious!!!</div>
+    <div class="alert alert-success">You successed</div>
 
+    <br />
+    <hr style="height: 1.5px; background: black; border: solid 1px black" />
+    <br />
 
+    <!-- creating buttons using btsrp -->
+    <div class="container" style="height: 100px">
+      <div
+        class="row justify-content-around align-items-center"
+        style="height: 100%"
+      >
+        <div class="col-3 btn btn-primary">Click</div>
+        <div class="col-3 btn btn-outline-primary">Click</div>
+      </div>
+    </div>
+    <br />
+    <hr style="height: 1.5px; background: black; border: solid 1px black" />
+    <br />
 
-
-
-     
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
