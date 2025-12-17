@@ -212,20 +212,59 @@
       id="slide"
       class="container carousel slide"
       data-bs-ride="carousel"
-      style="overflow: hidden; justify-content: center"
+      data-bs-interval="3000"
+      data-bs-pause="hover"
+      data-bs-keyboard="true"
     >
-      <ol class="carousel-indicators">
-        <li data-target="#slide" data-slide-to="0" class="active"></li>
-        <li data-target="#slide" data-slide-to="1"></li>
-        <li data-target="#slide" data-slide-to="2"></li>
-        <li data-target="#slide" data-slide-to="3"></li>
-        <li data-target="#slide" data-slide-to="4"></li>
-        <li data-target="#slide" data-slide-to="5"></li>
-        <li data-target="#slide" data-slide-to="6"></li>
-        <li data-target="#slide" data-slide-to="7"></li>
-      </ol>
-
       <div class="carousel-inner">
+        <div class="carousel-indicators">
+          <button
+            class="active"
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="8"
+          ></button>
+        </div>
         <div class="carousel-item active">
           <img src="image/solar-system.jpg" class="carousel-img" alt="" />
         </div>
@@ -251,15 +290,46 @@
           <img src="image/pluto.jpg" class="carousel-img" alt="" />
         </div>
       </div>
-      
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <br />
     <hr style="height: 1.5px; background: black; border: solid 1px black" />
     <br />
+
+    <div class="dropdown h-50">
+      <button
+        class="btn btn-danger dropdown-toggle"
+        id="d"
+        data-bs-toggle="dropdown"
+      >
+        menu
+      </button>
+      <div class="dropdown-menu" aria-labelledby="d">
+        <a href="#" class="dropdown-item">test</a>
+        <a href="#" class="dropdown-item">test1</a>
+      </div>
+    </div>
+   
     <!-- scripts -->
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
