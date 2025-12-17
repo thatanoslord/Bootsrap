@@ -157,29 +157,86 @@
         card-title: used to create a title in the card ;
         card-footer: used to create a footer in the card -->
 
-        <div class="container bg-warning">
-            <div class="row justify-content-center">
-                <div class="col-3"><div class="card">
-                    <img src="image/Card_behive.svg" class="card-img-top" alt="">
-                    <div class="card-body text-center "><div class="badge badge-primary text-orange">Beehive</div></div>
-                    <div class="card-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consequatur maiores, ullam dolorum tempore deserunt.</div>
-                    <div class="btn btn-outline-primary m-4">Check website live</div>
-                </div></div>
-                <div class="col-3"><div class="card">
-                    <img src="image/Card_earth.png" class="card-img-top" alt="">
-                    <div class="card-body text-center text-primary">Earth</div>
-                    <div class="card-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consequatur maiores, ullam dolorum tempore deserunt.</div>
-                    <div class="btn btn-outline-primary m-4">Check website live</div>
-                </div></div>
-                <div class="col-3"><div class="card">
-                    <img src="image/Card_titanium.svg" class="card-img-top" alt="">
-                    <div class="card-body text-center text-primary">titanium</div>
-                    <div class="card-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consequatur maiores, ullam dolorum tempore deserunt.</div>
-                    <div class="btn btn-outline-primary m-4">Check website live</div>
-                </div></div>
+    <div class="container bg-warning">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <div class="card">
+            <img src="image/Card_behive.svg" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <div class="badge badge-primary text-orange">Beehive</div>
             </div>
+            <div class="card-footer">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus consequatur maiores, ullam dolorum tempore deserunt.
+            </div>
+            <div class="btn btn-outline-primary m-4">Check website live</div>
+          </div>
         </div>
-     
+        <div class="col-3">
+          <div class="card">
+            <img src="image/Card_earth.png" class="card-img-top" alt="" />
+            <div class="card-body text-center text-primary">Earth</div>
+            <div class="card-footer">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus consequatur maiores, ullam dolorum tempore deserunt.
+            </div>
+            <div class="btn btn-outline-primary m-4">Check website live</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="image/Card_titanium.svg" class="card-img-top" alt="" />
+            <div class="card-body text-center text-primary">titanium</div>
+            <div class="card-footer">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus consequatur maiores, ullam dolorum tempore deserunt.
+            </div>
+            <div class="btn btn-outline-primary m-4">Check website live</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr style="height: 1.5px; background: black; border: solid 1px black" />
+    <br />
+
+    <!-- creating slides / carousel :
+     we need first to create a container so the slide won't take the whole page,
+     then use the class carousel, the carousel needs ol which is an ordred list the will contain li which is list which will track the carousel items
+     the we wil add carousel-items which wil have images   -->
+    <!-- carousel-indicators is the container for the indicators -->
+<div id="slide" class="container carousel slide" data-bs-ride="carousel" style="overflow:hidden; justify-content: center;">
+
+  <ol class="carousel-indicators">
+    <li data-target="#slide" data-slide-to="0" class="active"></li>
+    <li data-target="#slide" data-slide-to="1"></li>
+    <li data-target="#slide" data-slide-to="2"></li>
+    <li data-target="#slide" data-slide-to="3"></li>
+    <li data-target="#slide" data-slide-to="4"></li>
+    <li data-target="#slide" data-slide-to="5"></li>
+    <li data-target="#slide" data-slide-to="6"></li>
+    <li data-target="#slide" data-slide-to="7"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/solar-system.jpg" class="carousel-img" alt="">
+    </div>
+    <div class="carousel-item"><img src="image/earth.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/venus.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/uranus.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/mars.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/saturn.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/neptune.jpg" class="carousel-img" alt=""></div>
+    <div class="carousel-item"><img src="image/pluto.jpg" class="carousel-img" alt=""></div>
+  </div>
+
+</div>
+    <br />
+    <hr style="height: 1.5px; background: black; border: solid 1px black" />
+    <br />
+    <!-- scripts -->
 
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
