@@ -334,7 +334,9 @@
 
     <nav aria-label="breadcrumb">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <a href="#">Home</a>
+        </li>
         <li class="breadcrumb-item"><a href="#">About</a></li>
         <li class="breadcrumb-item"><a href="#">Project</a></li>
         <li class="breadcrumb-item"><a href="#">Privacy</a></li>
@@ -342,8 +344,17 @@
     </nav>
 
     <!-- how to create a collapse button or link -->
-     <!-- u create a button or link either using html or btsrp, give it either href or data-bs-target so it can be linked with the collapsed  element while using the id -->
+    <!-- u create a button or link either using html or btsrp, give it either href or data-bs-target so it can be linked with the collapsed  element while using the id -->
     <!-- then i create the collapsed element I give it the id and class collapse so it can be collapsed -->
+
+    <button data-bs-target="#ziad" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse">ziad</button>
+    <p id="ziad" class="collapse">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque labore,
+      voluptatibus aperiam quia doloribus similique est sit aliquam voluptatem
+      cupiditate molestias itaque recusandae vero aut quae ratione porro libero
+      earum?
+    </p>
+
     <!-- scripts -->
 
     <script src="js/bootstrap.bundle.js"></script>
