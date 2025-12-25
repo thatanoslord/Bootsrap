@@ -33,12 +33,32 @@ body {
   
 }
 .btn {
-  background-color: var(--primary-color);
-  border: none;
+  
 }
 .input-group-text {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .mobile_login {
   background: var(--background-color);
+}
+
+/*responsive  */
+@media screen and (max-width: 1000px) {
+    .form-col {
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+       max-width: 70%;
+       justify-self: center;
+       
+    }
+    .form-col input{
+        font-size: 14px;
+        width: 70%;
+    }
+    .button{
+        font-size: 14px;
+        width: 70%;
+      }
+    
 }
