@@ -9,26 +9,32 @@
   </head>
   <body>
     <!-- login page -->
-    <main class="container p-5" >
-      <div class="container-fluid row" style="border-radius: 24px;">
-        <div class="col-4 bg-danger">
-          <div class="p-3 ">
-            <h1 class="justify-content-center" style="display: flex;">
+    <main class="container p-5">
+      <div class="container-fluid row">
+        <div class="col-lg-4 col-sm-12 bg-danger">
+          <div class="p-3">
+            <h1 class="justify-content-center" style="display: flex">
               <img src="icons/Card_titanium.svg" alt="" />
               <span>Network</span>
             </h1>
-            <p class="justify-content-center" style="display: flex;">login into your account</p>
+            <p class="justify-content-center" style="display: flex">
+              login into your account
+            </p>
           </div>
           <form action="">
             <div class="mb-3">
               <label for="" class="form-label">Email adress</label>
-              <input
-                type="email"
-                name=""
-                id=""
-                class="form-control"
-                placeholder="Example@example.com"
-              />
+              <div class="input-group">
+                
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="Example@example.com"
+                />
+                <span class="input-group-text"><img src="icons/Frame.svg" alt=""></span>
+              </div>
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Password</label>
@@ -40,11 +46,28 @@
                 placeholder="Enter your Password"
               />
             </div>
-
-            <button class="btn w-100 bg-warning">Login now</button>
+            <button
+              type="submit"
+              class="btn w-100 bg-warning fs-5 fw-light text-center"
+            >
+              Login now
+            </button>
           </form>
+          <div class="d-flex align-items-center my-3">
+            <div class="flex-grow-1 border-top"></div>
+            <span class="px-3">OR</span>
+            <div class="flex-grow-1 border-top"></div>
+          </div>
+
+          <a
+            href="#"
+            class="btn btn-outline-warning w-100 fs-5 fw-light text-center"
+            >Register</a
+          >
         </div>
-        <div class="col-8 bg-warning"></div>
+        <div class="col-8 bg-secondary justify-content-around" style="display: flex;">
+          <img src="icons/Mobile_login.svg" alt="" />
+        </div>
       </div>
     </main>
     <!-- scripts -->
