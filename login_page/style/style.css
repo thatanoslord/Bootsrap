@@ -1,0 +1,33 @@
+:root{
+    --primary-color: #FD7401;
+    --secondary-color: #555555;
+    --font-family: "Poppins", sans-serif;
+    --background-color: #C2C2C2;
+    --text-color: #1E2772;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container-fluid {
+    border-radius: 24px;
+}
+
+.form-col{
+    background-color: #FFFFFF;
+}
+.btn{
+    background-color: var(--primary-color);
+    border: none;
+}
+.input-group-text{
+    background-color: var(--primary-color);
+}
